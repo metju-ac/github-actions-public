@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Call Jenkins trigger
         id: call-jenkins
-        uses: gooddata/github-actions-public/jenkins/trigger@master
+        uses: gooddata/github-actions-public/jenkins/trigger@fix-missing-requests-dependency
         with:
           server: ${{ secrets.JENKINS_ADDRESS }}
           folder: compliance
